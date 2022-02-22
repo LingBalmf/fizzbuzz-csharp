@@ -1,6 +1,6 @@
 namespace FizzBuzz.Rules
 {
-    public class ReverseRule : IRule
+    public class ReverseRule : IApplyable
     {
         public int Divisor { get; set; }
 

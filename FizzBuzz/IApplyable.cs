@@ -1,6 +1,6 @@
 namespace FizzBuzz.Rules
 {
-	public interface IRule
+	public interface IApplyable
     {
         List<string> Apply(List<string> previous, int number);
     }

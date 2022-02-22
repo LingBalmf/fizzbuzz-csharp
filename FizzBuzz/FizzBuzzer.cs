@@ -4,9 +4,9 @@ namespace FizzBuzz
 {
     public class FizzBuzzer
     {
-        public List<IRule> Rules { get; set; }
+        public List<IApplyable> Rules { get; set; }
 
-        public FizzBuzzer(List<IRule> rules)
+        public FizzBuzzer(List<IApplyable> rules)
         {
             Rules = rules;
         }
@@ -15,7 +15,7 @@ namespace FizzBuzz
         {
             List<string> output = new List<string>();
 
-            foreach (IRule rule in Rules)
+            foreach (IApplyable rule in Rules)
             {
                 output = rule.Apply(output, number);
             }

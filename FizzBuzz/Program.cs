@@ -8,7 +8,7 @@ namespace FizzBuzz
 
         static void Main(string[] args)
         {
-            var rules = new List<IRule>()
+            var rules = new List<IApplyable>()
             {
                 new ThreeRule(),
                 new DivisibleRule(5, "Buzz"),

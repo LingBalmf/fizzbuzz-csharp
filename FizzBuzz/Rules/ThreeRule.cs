@@ -1,6 +1,6 @@
 namespace FizzBuzz.Rules
 {
-    public class ThreeRule : IRule
+    public class ThreeRule : IApplyable
     {
 
         public List<string> Apply(List<string> previous, int number)

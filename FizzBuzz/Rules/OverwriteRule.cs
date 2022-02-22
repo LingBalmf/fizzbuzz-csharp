@@ -1,6 +1,6 @@
 namespace FizzBuzz.Rules
 {
-    public class OverwriteRule : IRule
+    public class OverwriteRule : IApplyable
     {
         public int Divisor { get; set; }
         public string ToReplaceWith { get; set; }
